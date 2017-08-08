@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Yuriy Markovich](https://up.htmlacademy.ru/htmlcss/18/user/212049).
-* Наставник: [Vladislav Balabanovich](https://up.htmlacademy.ru/htmlcss/18/user/6394).
-
+* Наставник: [Vladislav :cat: Balabanovich](https://up.htmlacademy.ru/htmlcss/18/user/6394).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
