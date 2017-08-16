@@ -6,28 +6,31 @@
   </head>
   <body>
     <div class="container"> 
-        <header class="main-header">
-          <nav class="main-navigation">
-            <ul>
-              <li><a href="information.html">Информация</a></li>
-              <li><a href="photos-videos.html">Фото и видео</a></li>
-              <li><a href="map-of-states.html">Карта штата</a></li>
-              <li><a href="hotels.html">Гостиницы</a></li>
-            </ul>
-          </nav>
-        </header>
-
+      <header class="main-header">
+        <div class="main-logo">
+          <img src="img/main-logo.jpg" width="50" height="70" alt="Логотип">
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="information.html">Информация</a></li>
+            <li><a href="photos-videos.html">Фото и видео</a></li>
+            <li><a href="map-of-states.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>    
+   
 
         <main class="container">
           <section class="welcome-page">
             <h1 class="visually-hidden">Страница приветсвия города Седона</h1>
             <div class="main-text">
-              <img src="img/welcome.jpg">
-              <img src="img/gorgeous.jpg">
-              <img src="img/line.jpg">
-              <img src="img/sedona.jpg">
-              <img src="img/grand_canyon.jpg">
-              <img src="img/bottom-feature.jpg">
+              <img src="img/welcome.jpg" width="120" height="30" alt="Добро пожаловать">
+              <img src="img/gorgeous.jpg" width="120" height="30" alt="в великолепную">
+              <img src="img/line.jpg" width="120" height="30" alt="">
+              <img src="img/sedona.jpg" width="120" height="30" alt="Седону">
+              <img src="img/grand_canyon.jpg" width="120" height="30" alt="потому-что Большой каньон!">
+              <img src="img/bottom-feature.jpg" width="120" height="30" alt="">
             </div>
           </section>
 
@@ -41,8 +44,10 @@
               <h2>Настоящий городок</h2>
               <span class="number">-№1-</span>
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            </div> 
-            <img class="feature-photo-1" width="400" height="70" alt="Фото квартала">
+            </div>
+            <div class="feature-photo-1">
+            <img src="img/feature-photo-1.jpg" width="400" height="70" alt="Фото квартала">
+            </div>
           </section>
 
           <section class="offer-list">
@@ -68,7 +73,9 @@
               <span class="number">-№2-</span>
               <p>Да, по нему можно пройти! Если конечно осмелитесь</p>
             </div>
-            <img class="feature-photo" width="400" height="70" alt="Фото Каньена">
+            <div class="feature-photo-2">
+            <img src="img/feature-photo-2.jpg" width="400" height="70" alt="Фото Каньена">
+            </div>
           </section>
 
           <section class="feature-item-list">
@@ -92,18 +99,20 @@
           </section>
 
           <section class="search-form">
-            <span>Заинтересовались?</span>
-            <p class="date-for-search">Укажите предполагаемые даты поездки,
+            <div class="appeal-text">
+              <span>Заинтересовались?</span>
+              <p class="date-for-search">Укажите предполагаемые даты поездки,
                 и мы покажем вам лучшие предложения гостиниц в Седоне
-            </p>
-            <bottom class="search-bottom" type="submit">Поиск гостиницы в Седоне</bottom>
+              </p>
+              <button class="search-buttom" type="submit">Поиск гостиницы в Седоне</button>
+            </div>    
             <form class="modal-form" method="post" action="http://echo.htmlacademy.ru">
               <label for="arrivel">Дата заезда:</label>
-              <input type="date" name="arrivel-time" id="arrivel" placeholder="30 августа 2017">
+              <input type="date" name="arrivel-time" id="arrivel">
               <label for="departure">Дата выезда:</label>
-              <input type="date" name="departure-time" id="departure" placeholder="30 сентября 2017">
+              <input type="date" name="departure-time" id="departure">
               <label for="adults">Взрослые:</label>
-              <input type="number" name="adults" id="adult" placeholder="2">
+              <input type="number" name="adults" id="adults" placeholder="2">
               <label for="children">Дети:</label>
               <input type="number" name="children" id="children" placeholder="0">
               <button class="modal-button" type="submit">Найти</button>
@@ -113,18 +122,20 @@
 
 
         <footer class="footer-page">
-          <section class="map">
+          <section class="footer-content">
+            <section class="map">
+            </section>
+            <span class="hashtag">
+              <a href="#">#VISITSEDONA</a>
+            </span>
+            <ul class="footer-social-block">
+              <li class="social-button"><a href="#">Твитер</a></li>
+              <li class="social-button"><a href="#">Фейсбук</a></li>
+              <li class="social-button"><a href="#">Ютьюб</a></li>
+            </ul>
+            <span class="footer-copyright">website by</span>
+            <a class="footer-logo" href="http://htmlacademy.ru">html academy</a>
           </section>
-          <span class"hashtag">
-            <a href="#">#VISITSEDONA</a>
-          </span>
-          <ul class="footer-social-block">
-            <li class="social-button"><a href="#">Твитер</a></li>
-            <li class="social-button"><a href="#">Фейсбук</a></li>
-            <li class="social-button"><a href="#">Ютьюб</a></li>
-          </ul>
-          <span class="footer-copyright">website by</span>
-          <a class="footer-logo" href="http://htmlacademy.ru">html academy</a>
         </footer>
       </div>
    </body>
