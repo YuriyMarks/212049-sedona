@@ -14,7 +14,7 @@
           <img src="img/logo.png" width="138" height="70" alt="Логотип">
         </div>
         <nav class="main-navigation">
-          <ul>
+          <ul class="navigation">
             <li><a href="information.html">Информация</a></li>
             <li><a href="photos-videos.html">Фото и видео</a></li>
             <li><a href="map-of-states.html">Карта штата</a></li>
@@ -35,21 +35,21 @@
           <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
 
-        <section class="features-item-1">
+        <section class="features-item">
           <h2 class="visually-hidden">Достоинства города</h2>
           <div class="feature-text">
             <h2 class="title">Настоящий городок</h2>
             <span class="number">-№1-</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="feature-photo-1">
-            <img src="img/district-photo.jpg" width="512" height="256" alt="Фото квартала">
+          <div class="feature-photo">
+            <img src="img/district-photo.jpg" width="800" height="256" alt="Фото квартала">
           </div>
         </section>
 
-        <section class="offer-list">
+        <section class="offer">
           <h2 class="visually-hidden">Предложения по проживанию в Седоне</h2>
-          <ul>
+          <ul class="offer-list">
             <li class="offer-item">
               <h2 class="title">Жилье</h2>
               <p class="recomended-item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -65,21 +65,21 @@
           </ul>
         </section>
 
-        <section class="features-item-2">
+        <section class="features-item">
           <h2 class="visually-hidden">Достоинства города</h2>
+          <div class="feature-photo">
+            <img src="img/mountain.jpg" width="800" height="256" alt="Фото Каньона">
+          </div>
           <div class="feature-text">
             <h2 class="title">Там есть мост дьявола</h2>
             <span class="number">-№2-</span>
             <p>Да, по нему можно пройти! Если конечно осмелитесь</p>
           </div>
-          <div class="feature-photo-2">
-            <img src="img/mountain.jpg" width="512" height="256" alt="Фото Каньона">
-          </div>
         </section>
 
         <section class="feature-item-list">
           <h2 class="visually-hidden">Достоинства города</h2>
-          <ul>
+          <ul class="feature-list">
             <li class="feature-item">
               <h2 class="title">Небольшая площадь</h2>
               <span class="number">-№3-</span>
@@ -99,17 +99,18 @@
         </section>
 
         <section class="search-form">
+          <h2 class="visually-hidden">Форма поиска гостиницы</h2>
           <div class="appeal-text">
             <span class="text">Заинтересовались?</span>
             <p class="date-for-search">
               Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
-            <button class="search-button" type="submit">
-              Поиск гостиницы в Седоне
-            </button>
           </div>
+          <button class="search-button" type="submit">
+            Поиск гостиницы в Седоне
+          </button>
           <form class="modal-form" action="http://echo.htmlacademy.ru" method="post">
-            <label for="arrivel">Дата заезда:</label>
+            <label for="arrivel"> Дата заезда:</label>
             <input type="text" name="arrivel-time" id="arrivel" placeholder="24 апреля 20017">
             <label for="departure">Дата выезда:</label>
             <input type="text" name="departure-time" id="departure" placeholder="24 апреля 20017">
@@ -129,16 +130,20 @@
           <div class="map">
             <img src="img/map.jpg" width="1200" height="593" alt="Карта местоположения">
           </div>
-          <span class="hashtag">
-            <a href="#">#VISITSEDONA</a>
-          </span>
-          <ul class="footer-social-block">
-            <li class="social-button"><a href="#">Твитер</a></li>
-            <li class="social-button"><a href="#">Фейсбук</a></li>
-            <li class="social-button"><a href="#">Ютьюб</a></li>
-          </ul>
-          <span class="footer-copyright">website by</span>
-          <a class="footer-logo" href="http://htmlacademy.ru">html academy</a>
+          <div class="footer-social">
+            <span class="hashtag">
+              <a href="#">#VISITSEDONA</a>
+            </span>
+            <ul class="footer-social-list">
+              <li class="social-button"><a href="#">Твитер</a></li>
+              <li class="social-button"><a href="#">Фейсбук</a></li>
+              <li class="social-button"><a href="#">Ютьюб</a></li>
+            </ul>
+            <div class="footer-copyright">
+              <span class="copyright">website by</span>
+              <a class="footer-logo" href="http://htmlacademy.ru">html academy</a>
+            </div>
+          </div>
         </section>
       </footer>
     </div>
