@@ -33,12 +33,12 @@ body{
 
 .main-header{
   position: relative;
- 
 }
 
 .main-logo{
   position: absolute;
-  left: 531px;
+  left: 50%;
+  margin-left: -69px;
 }
 
 .main-navigation{
@@ -199,6 +199,10 @@ body{
   margin-right: 65px;
 }
 
+.search-form{
+  position:relative;
+}
+
 .appeal-text{
   width: 500px;
   margin: 0 auto;
@@ -248,12 +252,16 @@ body{
 }
 
 .modal-form{
+  position: absolute;
+  left: 315px;
+  z-index: 10;
   width: 570px;
   margin: 0 auto;
   color: #000000;
   line-height: 26px;
   font-weight: 700;
 
+  background-color: #ffffff;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -330,14 +338,24 @@ body{
 }
 
 .footer-content{
-  line-height: 26px;
+  position: relative;
+  line-height: 26px; 
+}
+
+.map img{
+  display: block;
 }
 
 .footer-social{
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
   display: flex;
   justify-content: space-around;
   padding-top: 35px;
   padding-bottom: 35px;
+  
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .hashtag a{
@@ -383,7 +401,7 @@ body{
   color: #ffffff;
 
   background-color: #47769f;
-  background-image: url("img/filter-background.jpg");
+  background-image: url("../img/filter-background.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
