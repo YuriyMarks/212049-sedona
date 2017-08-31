@@ -50,15 +50,15 @@
         <section class="offer">
           <h2 class="visually-hidden">Предложения по проживанию в Седоне</h2>
           <ul class="offer-list">
-            <li class="offer-item">
+            <li class="offer-item offer-item-living">
               <h2 class="title">Жилье</h2>
               <p class="recomended-item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="offer-item">
+            <li class="offer-item offer-item-food">
               <h2 class="title">Еда</h2>
               <p class="recomended-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="offer-item">
+            <li class="offer-item offer-item-souvenir">
               <h2 class="title">Сувениры</h2>
               <p class="recomended-item-text">Не только китайского, но и местного производства! </p>
             </li>
@@ -110,14 +110,14 @@
             Поиск гостиницы в Седоне
           </button>
           <form class="modal-form" action="http://echo.htmlacademy.ru" method="post">
-            <label for="arrivel"> Дата заезда:</label>
+            <label for="arrivel"><span class="arrivel-time"></span>Дата заезда:</label>
             <input type="text" name="arrivel-time" id="arrivel" placeholder="24 апреля 20017">
-            <label for="departure">Дата выезда:</label>
+            <label for="departure"><span class="departure-time"></span>Дата выезда:</label>
             <input type="text" name="departure-time" id="departure" placeholder="24 апреля 20017">
-            <label for="adults">Взрослые:</label>
-            <input type="number" name="adults" id="adults" placeholder="2">
-            <label for="children">Дети:</label>
-            <input type="number" name="children" id="children" placeholder="0">
+            <label for="adults"><span class="minus"></span><span class="plus"></span>Взрослые:</label>
+            <input class="field-number" type="text" name="adults" id="adults" placeholder="2">
+            <label for="children"><span class="minus children-minus"></span><span class="plus children-plus"></span>Дети:</label>
+            <input class="field-number" type="text" name="children" id="children" placeholder="0">
             <button class="modal-button" type="submit">Найти</button>
           </form>
         </section>
@@ -135,13 +135,24 @@
               <a href="#">#VISITSEDONA</a>
             </span>
             <ul class="footer-social-list">
-              <li class="social-button"><a href="#">Твитер</a></li>
-              <li class="social-button"><a href="#">Фейсбук</a></li>
-              <li class="social-button"><a href="#">Ютьюб</a></li>
+              <li class="social-button social-button-twitter">
+                <a href="#">
+                  <span class="visually-hidden">Твитер</span>
+                </a></li>
+              <li class="social-button social-button-facebook">
+                <a href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="social-button social-button-youtube">
+                <a href="#">
+                  <span class="visually-hidden">Ютьюб</span>
+                </a>
+              </li>
             </ul>
             <div class="footer-copyright">
               <span class="copyright">website by</span>
-              <a class="footer-logo" href="http://htmlacademy.ru">html academy</a>
+              <a class="footer-logo" href="http://htmlacademy.ru"></a>
             </div>
           </div>
         </section>

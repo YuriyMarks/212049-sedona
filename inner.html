@@ -33,7 +33,7 @@
             <legend class="filter-title">Инфраструктура</legend>
             <ul>
               <li class="filter-infrastructure-option">
-                <input type="checkbox" name="pool" id="pool" checked>
+                <input type="checkbox" name="pool" id="pool" >
                 <label for="pool">Бассейн</label>
               </li>
               <li class="filter-infrastructure-option">
@@ -51,15 +51,15 @@
             <legend class="filter-title">Тип жилья</legend>
             <ul>
               <li class="filter-infrastructure-option">
-                <input type="checkbox" name="hotel"  id="hotel" checked>
+                <input type="checkbox" name="hotel"  id="hotel">
                 <label for="hotel">Гостиница</label>
               </li>
               <li class="filter-infrastructure-option">
-                <input type="checkbox" name="motel" id="motel" checked>
+                <input type="checkbox" name="motel" id="motel">
                 <label for="motel">Мотель</label>
               </li>
               <li class="filter-infrastructure-option">
-                <input type="checkbox" name="apartments" id="apartments" checked>
+                <input type="checkbox" name="apartments" id="apartments">
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
@@ -69,11 +69,11 @@
             <legend class="filter-title">Стоимость в сутки(Р):</legend>
             <div class="range-max-min">
               <label for="cost-range-min" class="visually-hidden">От</label>
-              <input type="text" name="cost-range-min" id="cost-range-min" placeholder="ОТ 0">
+              <input class="cost-range-min" type="text" name="cost-range-min" id="cost-range-min" placeholder="ОТ 0">
               <label for="cost-range-max" class="visually-hidden">До</label>
-              <input type="text" name="cost-range-max" id="cost-range-max" placeholder="ДО 3000">
+              <input class="cost-range-max" type="text" name="cost-range-max" id="cost-range-max" placeholder="ДО 3000">
             </div>
-            <div class="visually-hidden">Выбор цены</div>
+            <div class="range-line"></div>
             <button class="range-button" type="submit">Показать</button>
           </fieldset>
         </form>
@@ -90,8 +90,8 @@
             <li class="sorting-option"><a href="#">По рейтингу</a></li>
           </ul>
           <div class="arrows">
-            <a class="arrow-up">Стрелка вверх</a><br>
-            <a class="arrow-down">Стрелка вниз</a>
+            <a class="arrow-up"></a>
+            <a class="arrow-down arrow-down-active"></a>
           </div>
         </section>
 
@@ -114,11 +114,11 @@
             </div>
             <div class="rating">
               <div class="rating-stars">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
               <p class="rating-output">Рейтинг: 8.5</p>
             </div>
@@ -141,8 +141,8 @@
             </div>
             <div class="rating">
               <div class="rating-stars">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
+                <span></span>
+                <span></span>
               </div>
               <p class="rating-output">Рейтинг: 8.9</p>
             </div>
@@ -165,9 +165,9 @@
             </div>
             <div class="rating">
               <div class="rating-stars">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
               <p class="rating-output">Рейтинг: 9.2</p>
             </div>
@@ -178,18 +178,29 @@
 
       <footer class="footer-page">
         <section class="footer-content">
-          <div class="footer-social">
+          <div class="footer-social footer-social-inner">
             <span class="hashtag">
               <a href="#">#VISITSEDONA</a>
             </span>
             <ul class="footer-social-list">
-              <li class="social-button"><a href="#">Твитер</a></li>
-              <li class="social-button"><a href="#">Фейсбук</a></li>
-              <li class="social-button"><a href="#">Ютьюб</a></li>
+              <li class="social-button social-button-twitter">
+                <a href="#">
+                  <span class="visually-hidden">Твитер</span>
+                </a></li>
+              <li class="social-button social-button-facebook">
+                <a href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="social-button social-button-youtube">
+                <a href="#">
+                  <span class="visually-hidden">Ютьюб</span>
+                </a>
+              </li>
             </ul>
             <div class="footer-copyright">
               <span class="copyright">website by</span>
-              <a class="footer-logo" href="http://htmlacademy.ru">html academy</a>
+              <a class="footer-logo" href="http://htmlacademy.ru"></a>
             </div>
           </div>
         </section>
