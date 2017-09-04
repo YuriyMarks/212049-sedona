@@ -11,6 +11,7 @@ body{
   text-transform: uppercase;
 
   background-color: #f2f2f2;
+  box-shadow: 0 0 8px 1px rgba(0 ,0, 0, 0.1);
 }
 
 .container{
@@ -18,6 +19,7 @@ body{
   width: 1200px;
 
   background-color: #ffffff;
+  box-shadow: 0 0 8px 2px rgba(0 ,0, 0, 0.1);
 }
 
 .title{
@@ -31,6 +33,11 @@ body{
   display: none;
 }
 
+img{
+  width: 100%;
+  height: auto;
+}
+
 .main-header{
   position: relative;
 }
@@ -39,6 +46,7 @@ body{
   position: absolute;
   left: 50%;
   margin-left: -69px;
+  z-index: 10;
 }
 
 .main-navigation{
@@ -50,19 +58,19 @@ body{
   display: flex;
   margin: 0;
   padding: 0;
- 
+
   list-style: none;
 }
 
 .navigation li{
   width: 20%;
   padding: 15px 0;
-  
+
   text-align: center;
 }
 
 .navigation li:nth-child(2){
-   margin-right: 20%; 
+   margin-right: 20%;
 }
 
 .navigation a{
@@ -79,7 +87,23 @@ body{
 }
 
 .welcome-page{
-  margin-bottom: 65px;
+  position: relative;
+  margin-bottom: 56px;
+}
+
+.welcome-page::before{
+  position: absolute;
+  content: "";
+  width: 1200px;
+  height: 57px;
+  bottom: 0px;
+
+  background-image: url("../img/background-main-mask.png");
+  background-repeat: no-repeat;
+}
+
+.welcome-page img{
+  display: block;
 }
 
 .appeal{
@@ -93,7 +117,7 @@ body{
 }
 
 .appeal p{
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .appeal p:nth-child(2){
@@ -111,6 +135,7 @@ body{
 
 .feature-text{
   width: 400px;
+  margin: 0 auto;
 
   color: #ffffff;
   text-align: center;
@@ -122,17 +147,18 @@ body{
 
 .feature-text h2{
   margin-top: 47px;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 122px;
+  margin-right: 122px;
   color: #ffffff;
 }
 
-.number{
-  margin-top: 24px;
+.feature-text .number{
+  display: inline-block;
+  margin-top: 9px;
 }
 
 .feature-text p{
-  margin-top: 26px;
+  margin-top: 22px;
   margin-left: 45px;
   margin-right: 45px;
 }
@@ -147,10 +173,13 @@ body{
 
 .offer-list{
   display: flex;
+  justify-content: space-between;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
+
 }
 
 .offer-item{
@@ -159,32 +188,32 @@ body{
 }
 
 .offer-item h2{
-  margin-top: 160px;
-  margin-bottom: 23px;
+  margin-top: 162px;
+  margin-bottom: 24px;
 }
 
 .offer-item p{
   margin-bottom: 83px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 54px;
+  margin-right: 55px;
 }
 
 .offer-item-living{
   background-image: url("../img/offer-item-housing.svg");
   background-repeat: no-repeat;
-  background-position: 50% 55px;
+  background-position: center 61px;
 }
 
 .offer-item-food{
   background-image: url("../img/offer-item-food.svg");
   background-repeat: no-repeat;
-  background-position: 50% 55px;
+  background-position: center 61px;
 }
 
 .offer-item-souvenir{
   background-image: url("../img/offer-item-souvenir.svg");
   background-repeat: no-repeat;
-  background-position: 50% 55px;
+  background-position: center 57px;
 }
 
 .feature-item-list{
@@ -204,16 +233,16 @@ body{
 }
 
 .feature-item h2{
-  margin-top: 46px;
-  margin-bottom: 22px;
-  margin-left: 130px;
+  margin-top: 49px;
+  margin-bottom: 24px;
+  margin-left: 128px;
   margin-right: 130px;
 }
 
 .feature-item p{
-  margin-top: 26px;
+  margin-top: 24px;
   margin-bottom: 60px;
-  margin-left: 65px;
+  margin-left: 62px;
   margin-right: 65px;
 }
 
@@ -224,7 +253,7 @@ body{
 .appeal-text{
   width: 500px;
   margin: 0 auto;
-  padding-top: 53px;
+  padding-top: 50px;
 
   line-height: 24px;
   text-align: center;
@@ -238,8 +267,8 @@ body{
 }
 
 .appeal-text p{
-  margin-top: 27px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 48px;
 }
 
 .search-button{
@@ -257,6 +286,7 @@ body{
 
   border: none;
   background-color: #766357;
+  cursor: pointer;
 }
 
 .search-button:hover{
@@ -275,7 +305,7 @@ body{
   z-index: 10;
   width: 570px;
   margin: 0 auto;
-  
+
   color: #000000;
   line-height: 26px;
   font-weight: 700;
@@ -285,8 +315,10 @@ body{
 }
 
 .modal-form input{
-  width: 318px;
-  padding: 10px 12px 10px 12px;
+  box-sizing: border-box;
+  width: 346px;
+  height: 38px;
+  padding: 5px 45px 6px 10px;
   font-size: 14px;
   color: #000000;
   font-weight: 700;
@@ -296,7 +328,7 @@ body{
 
   border: none;
   background-color: #f2f2f2;
-  
+
 }
 
 .modal-form input:hover{
@@ -304,33 +336,35 @@ body{
 }
 
 .modal-form input:focus{
-  outline: none;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
   background-color: #ffffff;
 }
 
 .modal-form .field-number{
-  width: 90px;
-
+  width: 113px;
+  padding-right: 37px;
+  padding-left: 37px;
   text-align: center;
 }
 
 .modal-form label{
+  box-sizing: border-box;
   position: relative;
   display: inline-block;
-  width: 95px;
-  margin-right: 15px;
-  margin-left: 55px;
+  width: 109px;
+
+  margin-left: 57px;
 }
 
 .modal-form label:nth-of-type(4){
-  width: 40px;
-  margin-left: 52px;                          
+  width: 65px;
+  margin-left: 48px;
+
 }
 
 .modal-form input:nth-of-type(1){
   margin-top: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .modal-form input:nth-of-type(4){
@@ -345,21 +379,23 @@ body{
   display: inline-block;
   width: 13px;
   height: 13px;
-  
+
   background-image: url("../img/minus.png");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .plus{
   position: absolute;
-  top: 7px;
-  left: 204px;
+  top: 9px;
+  left: 202px;
   display: inline-block;
   width: 13px;
   height: 13px;
-  
+
   background-image: url("../img/plus.png");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .minus:hover{
@@ -383,16 +419,16 @@ body{
 }
 
 .children-minus{
-  left: 70px;
+  left: 80px;
 }
 
 .children-plus{
-  left: 149px;
+  left: 155px;
 }
 
 .modal-button{
   width: 458px;
-  height: 60px;
+  height: 58px;
   margin-left: 55px;
   margin-right: 55px;
   margin-bottom: 55px;
@@ -401,9 +437,11 @@ body{
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 
   border: none;
   background-color: #81b3d2;
+  cursor: pointer;
 }
 
 .modal-button:hover{
@@ -421,10 +459,12 @@ body{
   display: inline-block;
   width: 23px;
   height: 23px;
-  left: 420px;
-  
+  left: 428px;
+  top: 15%;
+
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .arrivel-time:hover,
@@ -439,22 +479,10 @@ body{
   background-repeat: no-repeat;
 }
 
-.departure-time::after{
-  position: absolute;
-  display: table;
-  content: "";
-  width: 23px;
-  height: 23px;
-  top: 0;
-  left: 420px;
-  
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-}
 
 .footer-content{
   position: relative;
-  line-height: 26px; 
+  line-height: 26px;
 }
 
 .map img{
@@ -466,10 +494,9 @@ body{
   bottom: 0;
   width: 1200px;
   display: flex;
-  justify-content: space-around;
   padding-top: 35px;
   padding-bottom: 35px;
-  
+
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -479,6 +506,7 @@ body{
 
 .hashtag{
   padding-top: 12px;
+  margin-left: 132px;
 }
 
 .hashtag a{
@@ -492,7 +520,8 @@ body{
   display: flex;
   margin: 0;
   padding: 0;
- 
+  margin-left: 257px;
+
   text-align: center;
   list-style: none;
 }
@@ -500,8 +529,9 @@ body{
 .social-button{
   width: 45px;
   height: 50px;
-  
+
   background-color: #81b3d2;
+  cursor: pointer;
 }
 
 .social-button-twitter{
@@ -551,17 +581,21 @@ body{
 
 .footer-copyright{
   display: flex;
+  margin-left: 227px;
+
   align-items: center;
 }
 
 .footer-social-list a{
   margin-right: 10px;
+
   color: #000000;
   text-decoration: none;
 }
 
 .copyright{
   display: inline-block;
+
   color: #000000;
   font-size: 14px;
 }
@@ -570,8 +604,8 @@ body{
   display: inline-block;
   width: 122px;
   height: 42px;
-  margin-left: 10px;
-  
+  margin-left: 8px;
+
   background-image: url("../img/logo-footer.svg");
   background-repeat: no-repeat;
 }
@@ -593,7 +627,7 @@ body{
 .filter-form{
   display: flex;
   padding-top: 30px;
-  
+
   color: #ffffff;
 
   background-color: #47769f;
@@ -627,7 +661,7 @@ body{
 .filter ul{
   margin-bottom: 30px;
   padding: 0;
-  
+
   list-style: none;
 }
 
@@ -646,6 +680,7 @@ body{
   padding-left: 40px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .filter-infrastructure-option input[type="checkbox"]:checked + label{
@@ -660,35 +695,58 @@ body{
 }
 
 .range-max-min{
-  width: 313px;
+  box-sizing: border-box;
+  width: 320px;
   height: 36px;
   margin-bottom: 20px;
+  font-size: 0;
+
   border: 2px solid #ffffff;
   border-radius: 2px;
-  
+}
+
+.range-max-min label{
+  box-sizing: border-box;
+  width: 90px;
+  padding-left: 64px;
+  padding-right: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  cursor: pointer;
 }
 
 .range-max-min input{
-  width: 151px;
+  box-sizing: border-box;
+  width: 70px;
   height: 36px;
-  color: red;
-  text-align: center;
+  padding-right: 8px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-.cost-range-min{
+.range-max-min{
   background-image: url("../img/range-line-border.png");
   background-repeat: no-repeat;
-  background-position: 150px 7px;
+  background-position: center center;
 }
 
 .range-line{
   position: relative;
   width: 320px;
+  margin-left: 1px;
   height: 2px;
-  
+
   background-image: url("../img/range-line-full.png"),
                     url("../img/range-line.png");
   background-repeat: no-repeat, no-repeat;
@@ -701,7 +759,8 @@ body{
   width: 25px;
   height: 25px;
   top: -10px;
-  
+  cursor: pointer;
+
   background-image: url("../img/range-max-min.svg");
   background-repeat: no-repeat;
 }
@@ -714,8 +773,14 @@ body{
   height: 25px;
   top: -10px;
   left: 240px;
-  
+  cursor: pointer;
+
   background-image: url("../img/range-max-min.svg");
+  background-repeat: no-repeat;
+}
+
+.range-line:hover::before{
+  background-image: url("../img/range-max-min-hover.svg");
   background-repeat: no-repeat;
 }
 
@@ -729,6 +794,7 @@ body{
   color: #ffffff;
   text-transform: uppercase;
   border-radius: 2px;
+  cursor: pointer;
 
   border: 2px solid #ffffff;
   background-color: transparent;
@@ -818,6 +884,7 @@ body{
   margin-left: 5px;
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .arrow-up:hover{
@@ -873,8 +940,8 @@ body{
   display: inline-block;
   width: 20px;
   height: 20px;
-  
-  
+
+
   background-image: url("../img/icon-star.svg");
   background-repeat: no-repeat;
 }
@@ -895,6 +962,8 @@ body{
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  cursor: pointer;
 }
 
 .hotel-name:hover{
@@ -910,6 +979,7 @@ body{
   text-transform: uppercase;
 
   border: none;
+  cursor: pointer;
 }
 
 .more-detailed-button{
@@ -944,7 +1014,7 @@ body{
 
 .rating-output{
   margin: 0;
-  
+
   color: #666666;
 
   background-color: #f2f2f2;
