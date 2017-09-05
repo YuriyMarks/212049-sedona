@@ -11,7 +11,6 @@ body{
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-  box-shadow: 0 0 8px 1px rgba(0 ,0, 0, 0.1);
 }
 
 .container{
@@ -64,7 +63,7 @@ img{
 
 .navigation li{
   width: 20%;
-  padding: 15px 0;
+  padding: 14px 0 16px;
 
   text-align: center;
 }
@@ -626,7 +625,7 @@ img{
 
 .filter-form{
   display: flex;
-  padding-top: 30px;
+  padding-top: 27px;
 
   color: #ffffff;
 
@@ -639,35 +638,38 @@ img{
 .filter{
   margin: 0;
   padding: 0;
+  margin-bottom: 7px;
+    
   border: none;
 }
 
 .filter-infrasructure{
   width: 155px;
-  margin-left: 70px;
+  margin-left: 71px;
 }
 
 .filter-living{
   width: 155px;
-  margin-left: 95px;
+  margin-left: 100px;
 }
 
 .filter-price{
   width: 320px;
-  margin-left: auto;
-  margin-right: 73px;
+  margin-left: 330px;
 }
 
 .filter ul{
-  margin-bottom: 30px;
+  margin: 0;
   padding: 0;
+  margin-top: 10px;
+/* margin-bottom: 28px;*/
 
   list-style: none;
 }
 
 .filter-infrastructure-option{
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .filter-infrastructure-option input[type="checkbox"]{
@@ -678,8 +680,10 @@ img{
   display: inline-block;
   height: 25px;
   padding-left: 40px;
+  
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+    
   cursor: pointer;
 }
 
@@ -689,20 +693,28 @@ img{
 }
 
 .filter-title{
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-size: 16px;
   font-weight: 700;
 }
 
+.filter-price .filter-title{
+    margin-bottom: 10px;
+}
+
 .range-max-min{
   box-sizing: border-box;
-  width: 320px;
+  width: 318px;
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-size: 0;
 
   border: 2px solid #ffffff;
   border-radius: 2px;
+    
+  background-image: url("../img/range-line-border.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .range-max-min label{
@@ -717,6 +729,10 @@ img{
   font-family: "PT Sans", "Arial", sans-serif;
 
   cursor: pointer;
+}
+
+.range-max-min label:nth-of-type(2){
+  padding-left: 55px;
 }
 
 .range-max-min input{
@@ -735,60 +751,63 @@ img{
   outline: none;
 }
 
-.range-max-min{
-  background-image: url("../img/range-line-border.png");
-  background-repeat: no-repeat;
-  background-position: center center;
+.range-control{
+  position: relative;
+  margin-top: 21px;
+}
+
+.range-line-full{  
+  height: 2px;
+
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-line{
-  position: relative;
-  width: 320px;
-  margin-left: 1px;
+  width: 252px;
   height: 2px;
 
-  background-image: url("../img/range-line-full.png"),
-                    url("../img/range-line.png");
-  background-repeat: no-repeat, no-repeat;
+  background-color: #ffffff; 
 }
 
-.range-line::before{
+.range-toggle{
   position: absolute;
-  content: "";
-  display: table;
-  width: 25px;
-  height: 25px;
-  top: -10px;
+  top: -11px;  
+  width: 4px;
+  height: 4px;
+   
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgda(0, 1, 1, 0.2);
+  
   cursor: pointer;
-
-  background-image: url("../img/range-max-min.svg");
-  background-repeat: no-repeat;
 }
 
-.range-line::after{
-  position: absolute;
-  content: "";
-  display: table;
-  width: 25px;
-  height: 25px;
-  top: -10px;
-  left: 240px;
-  cursor: pointer;
-
-  background-image: url("../img/range-max-min.svg");
-  background-repeat: no-repeat;
+.range-toggle-min{
+  
 }
 
-.range-line:hover::before{
-  background-image: url("../img/range-max-min-hover.svg");
-  background-repeat: no-repeat;
+.range-toggle-max{
+  left: 252px;
+}
+
+.range-toggle-min:hover{
+  top: -10px;
+    
+  border: 9px solid #ffffff;
+  
+}
+
+.range-toggle-max:hover{
+  top: -10px;
+  border: 9px solid #ffffff;
 }
 
 .range-button{
-  width: 140px;
-  height: 40px;
-  margin-left: 90px;
-  margin-top: 35px;
+  width: 137px;
+  height: 36px;
+  margin-left: 84px;
+  margin-top: 31px;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -817,13 +836,13 @@ img{
 .sorting{
   display: flex;
   padding-top: 30px;
-  padding-bottom: 20px;
-  padding-left: 70px;
+  padding-bottom: 16px;
+  padding-left: 71px;
   padding-right: 70px;
 }
 
 .sort{
-  margin-right: 37px;
+  margin-right: 39px;
   color: #000000;
   font-size: 12px;
   line-height: 18px;
@@ -831,15 +850,16 @@ img{
 
 .sorting-list{
   width: 290px;
-  margin-top: 5px;
   padding: 0;
-  margin-right: 455px;
+  margin-top: 5px;
+  margin-right: 453px;
+    
   list-style: none;
 }
 
 .sorting-list li{
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 29px;
 }
 
 .sorting-list a{
@@ -869,6 +889,7 @@ img{
 }
 
 .arrows{
+  margin-top: 10px;
   font-size: 7px;
   line-height: 8px;
 }
@@ -881,7 +902,7 @@ img{
 }
 
 .arrow-up{
-  margin-left: 5px;
+  margin-right: 7px;
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   cursor: pointer;
@@ -904,21 +925,19 @@ img{
 
 .result-info{
   display: flex;
-  padding: 30px 70px 30px 70px;
+  padding: 30px 70px 30px 72px;
   border-bottom:1px solid #f2f2f2;
 }
 
 .result-description{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 270px;
-  margin-right: 500px;
+  margin-right: 522px;
 }
 
 .housing span:first-child{
   display: inline-block;
-  width: 110px;
+  width: 112px;
 }
 
 .rating{
@@ -932,7 +951,8 @@ img{
 }
 
 .rating-stars{
-  width: 120px;
+  margin-left: 3px;
+  width: 110px;
   text-align: right;
 }
 
@@ -959,6 +979,8 @@ img{
 }
 
 .hotel-name{
+  margin-top: -5px;
+  margin-bottom: 7px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -974,6 +996,7 @@ img{
   color: rgba(0, 0, 0, 0.3);
 }
 .result-button{
+  margin-top: 14px;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
@@ -983,8 +1006,9 @@ img{
 }
 
 .more-detailed-button{
+  margin-right: 2px;
   width: 110px;
-  height: 25px;
+  height: 27px;
   background-color: #81b3d2;
 }
 
@@ -998,8 +1022,8 @@ img{
 }
 
 .book-it-button{
-  width: 140px;
-  height: 25px;
+  width: 142px;
+  height: 27px;
   background-color: #766357;
 }
 
@@ -1014,7 +1038,9 @@ img{
 
 .rating-output{
   margin: 0;
-
+  padding-top: 4px;
+  padding-bottom: 4px;
+    
   color: #666666;
 
   background-color: #f2f2f2;
