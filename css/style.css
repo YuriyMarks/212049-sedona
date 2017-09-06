@@ -28,8 +28,13 @@ body{
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.visually-hidden{
-  display: none;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
 
 img{
@@ -299,6 +304,40 @@ img{
   background-color: #503e33;
 }
 
+@keyframes movingButton{
+  0%{
+    transform: translateX(-1000px);
+  }
+  80%{
+    transform: translateX(20px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes shakingButton {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-form{
   position: absolute;
   left: 315px;
@@ -312,6 +351,18 @@ img{
 
   background-color: #ffffff;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.modal-form-show{
+  display: block;
+  animation-name: movingButton;
+  animation-duration: 1.5s;
+}
+
+.modal-form-error{
+  animation-name: shakingButton;
+  animation-duration: 2s;  
 }
 
 .modal-form input{
@@ -872,12 +923,12 @@ img{
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
 
-  border-bottom: 1px dashed #000000;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-list a:hover{
   color: #81b3d2;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-list a:active{
@@ -1043,11 +1094,11 @@ img{
 
 .rating-output{
   margin: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
     
   color: #666666;
-
+  
   background-color: #f2f2f2;
 }
 
