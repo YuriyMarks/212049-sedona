@@ -136,6 +136,7 @@ img{
   width: 400px;
   margin: 0 auto;
 
+  font: inherit;
   color: #ffffff;
   text-align: center;
 
@@ -274,13 +275,13 @@ img{
   width: 570px;
   margin-left: 315px;
   margin-right: 315px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: #ffffff;
+  font: inherit;
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
   text-transform: uppercase;
 
   border: none;
@@ -428,10 +429,12 @@ img{
 .modal-button{
   width: 458px;
   height: 58px;
-  margin-left: 55px;
+  margin-left: 56px;
   margin-right: 55px;
   margin-bottom: 55px;
+    
   color: #ffffff;
+  font: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -692,6 +695,11 @@ img{
   background-repeat: no-repeat;
 }
 
+.filter-infrastructure-option input[disabled] + label{
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat; 
+}
+
 .filter-title{
   margin-bottom: 14px;
   font-size: 16px;
@@ -771,7 +779,7 @@ img{
 
 .range-toggle{
   position: absolute;
-  top: -11px;  
+  top: -9px;  
   width: 4px;
   height: 4px;
    
@@ -783,10 +791,6 @@ img{
   cursor: pointer;
 }
 
-.range-toggle-min{
-  
-}
-
 .range-toggle-max{
   left: 252px;
 }
@@ -795,11 +799,11 @@ img{
   top: -10px;
     
   border: 9px solid #ffffff;
-  
 }
 
 .range-toggle-max:hover{
   top: -10px;
+    
   border: 9px solid #ffffff;
 }
 
@@ -997,6 +1001,7 @@ img{
 }
 .result-button{
   margin-top: 14px;
+  font: inherit;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
