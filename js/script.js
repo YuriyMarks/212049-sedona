@@ -6,29 +6,29 @@ var form = document.querySelector("form");
 
 search.addEventListener("click", function(evt){
   
-  if(!modalForm.classList.contains("modal-form-show")){  
-    evt.preventDefault();
-    modalForm.classList.add("modal-form-show");
-    focus.focus();
-  }
-  else if(modalForm.classList.contains("modal-form-show")){
+  if(modalForm.classList.contains("modal-form-show")){
     evt.preventDefault();
     modalForm.classList.remove("modal-form-show");
     modalForm.classList.remove("modal-form-error");
   }
+  else if(!modalForm.classList.contains("modal-form-show")){  
+    evt.preventDefault();
+    modalForm.classList.add("modal-form-show");
+    focus.focus();
+  } 
 });
 
 form.addEventListener("submit", function(evt){
-    if(!focus.value || !departureDate.value){
+  if(!focus.value || !departureDate.value){
       evt.preventDefault();
       modalForm.classList.remove("modal-form-error");
       modalForm.offsetWidth = modalForm.offsetWidth;
       modalForm.classList.add("modal-form-error");
-    }
+  }
 });
 window.addEventListener("keydown", function(evt){
-    if(evt.keyCode === 27){
+  if(evt.keyCode === 27){
       modalForm.classList.remove("modal-form-show");
       modalForm.classList.remove("modal-form-error");
-    }
+  }
 });

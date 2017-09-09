@@ -277,11 +277,12 @@ img{
 }
 
 .search-button{
-  width: 570px;
   margin-left: 315px;
   margin-right: 315px;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 140px;
+  padding-right: 140px;
 
   color: #ffffff;
   font: inherit;
@@ -342,7 +343,7 @@ img{
   position: absolute;
   left: 315px;
   z-index: 10;
-  width: 570px;
+  width: 569px;
   margin: 0 auto;
 
   color: #000000;
@@ -367,7 +368,7 @@ img{
 
 .modal-form input{
   box-sizing: border-box;
-  width: 346px;
+  width: 345px;
   height: 38px;
   padding: 5px 45px 6px 10px;
   font-size: 14px;
@@ -379,7 +380,6 @@ img{
 
   border: none;
   background-color: #f2f2f2;
-
 }
 
 .modal-form input:hover{
@@ -402,15 +402,14 @@ img{
   box-sizing: border-box;
   position: relative;
   display: inline-block;
-  width: 109px;
+  width: 108px;
 
   margin-left: 57px;
 }
 
 .modal-form label:nth-of-type(4){
-  width: 65px;
+  width: 64px;
   margin-left: 48px;
-
 }
 
 .modal-form input:nth-of-type(1){
@@ -478,10 +477,8 @@ img{
 }
 
 .modal-button{
-  width: 458px;
-  height: 58px;
+  padding: 16px 196px;
   margin-left: 56px;
-  margin-right: 55px;
   margin-bottom: 55px;
     
   color: #ffffff;
@@ -532,14 +529,13 @@ img{
   background-repeat: no-repeat;
 }
 
-
 .footer-content{
   position: relative;
   line-height: 26px;
 }
 
-.map img{
-  display: block;
+.map{
+  background: url("../img/map.jpg") no-repeat;
 }
 
 .footer-social{
@@ -549,7 +545,6 @@ img{
   display: flex;
   padding-top: 35px;
   padding-bottom: 35px;
-
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -859,12 +854,12 @@ img{
 }
 
 .range-button{
-  width: 137px;
-  height: 36px;
+  box-sizing: border-box;
+  padding: 5px 33px;
   margin-left: 84px;
   margin-top: 31px;
-  font-size: 14px;
-  line-height: 21px;
+    
+  font: inherit;
   color: #ffffff;
   text-transform: uppercase;
   border-radius: 2px;
@@ -1062,9 +1057,8 @@ img{
 }
 
 .more-detailed-button{
-  margin-right: 2px;
-  width: 110px;
-  height: 27px;
+  margin-right: 3px;
+  padding: 3px 16px 3px 17px;
   background-color: #81b3d2;
 }
 
@@ -1078,8 +1072,7 @@ img{
 }
 
 .book-it-button{
-  width: 142px;
-  height: 27px;
+  padding: 3px 16px 3px 17px;
   background-color: #766357;
 }
 
