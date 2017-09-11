@@ -5,7 +5,6 @@ var departureDate =document.querySelector("[name=departure-time]");
 var form = document.querySelector("form");
 
 search.addEventListener("click", function(evt){
-  
   if(modalForm.classList.contains("modal-form-show")){
     evt.preventDefault();
     modalForm.classList.remove("modal-form-show");
@@ -20,15 +19,15 @@ search.addEventListener("click", function(evt){
 
 form.addEventListener("submit", function(evt){
   if(!focus.value || !departureDate.value){
-      evt.preventDefault();
-      modalForm.classList.remove("modal-form-error");
-      modalForm.offsetWidth = modalForm.offsetWidth;
-      modalForm.classList.add("modal-form-error");
+    evt.preventDefault();
+    modalForm.classList.remove("modal-form-error");
+    modalForm.offsetWidth = modalForm.offsetWidth;
+    modalForm.classList.add("modal-form-error");
   }
 });
 window.addEventListener("keydown", function(evt){
   if(evt.keyCode === 27){
-      modalForm.classList.remove("modal-form-show");
-      modalForm.classList.remove("modal-form-error");
+    modalForm.classList.remove("modal-form-show");
+    modalForm.classList.remove("modal-form-error");
   }
 });
