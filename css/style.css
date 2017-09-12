@@ -345,10 +345,10 @@ img{
 }
 
 @-webkit-keyframes shakingButton {
-  0%,
+ 0%,
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 
   10%,
@@ -356,24 +356,24 @@ img{
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
   }
 }
 
 @keyframes shakingButton {
   0%,
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 
   10%,
@@ -381,25 +381,25 @@ img{
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
   }
 }
 
 .modal-form{
   position: absolute;
-  left: 315px;
-  z-index: 10;
+  left: 50%;
   width: 569px;
-  margin: 0 auto;
+  margin-left: -284.5px;
+  z-index: 10;
 
   color: #000000;
   line-height: 26px;
@@ -415,15 +415,15 @@ img{
   display: block;
   -webkit-animation-name: movingButton;
           animation-name: movingButton;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .modal-form-error{
   -webkit-animation-name: shakingButton;
           animation-name: shakingButton;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;  
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;  
 }
 
 .modal-form input{
@@ -1200,7 +1200,6 @@ img{
   
   background-color: #f2f2f2;
 }
-
 
 
 

@@ -4,6 +4,8 @@ var focus = document.querySelector("[name=arrivel-time]");
 var departureDate =document.querySelector("[name=departure-time]");
 var form = document.querySelector("form");
 
+focus.focus();
+
 search.addEventListener("click", function(evt){
   if(modalForm.classList.contains("modal-form-show")){
     evt.preventDefault();
@@ -25,6 +27,7 @@ form.addEventListener("submit", function(evt){
     modalForm.classList.add("modal-form-error");
   }
 });
+
 window.addEventListener("keydown", function(evt){
   if(evt.keyCode === 27){
     modalForm.classList.remove("modal-form-show");
