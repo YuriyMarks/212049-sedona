@@ -1,7 +1,7 @@
 body{
   margin: 0 auto;
   padding: 0;
-  min-width: 1280px;
+  min-width: 1200px;
 
   font-size: 14px;
   line-height: 21px;
@@ -42,52 +42,42 @@ img{
   height: auto;
 }
 
-.main-header{
-  position: relative;
-}
-
 .main-logo{
   position: absolute;
+  top: 0;
   left: 50%;
   margin-left: -69px;
   z-index: 10;
 }
 
-.main-navigation{
-  line-height: 26px;
-  font-weight: 700;
+.main-header{
+  padding-left: 6%;
+  padding-right: 6%;
+  background: white;
+  position: relative;
 }
 
 .navigation{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  height: 56px;
   margin: 0;
   padding: 0;
-  margin-left: 71px;
 
   list-style: none;
 }
 
 .navigation li{
-  padding: 14px 0 16px;
-}
-
-.navigation li:nth-child(2){
-  margin-left: 147px;
-}
-
-.navigation li:nth-child(3){
-  margin-left: 388px;
-}
-
-.navigation li:nth-child(4){
-  margin-left: 166px;
+  width: 240px;
 }
 
 .navigation a{
   color: #000000;
   text-decoration: none;
+  font-weight: 700;
+  line-height: 56px;
 }
 
 .navigation a:hover{
@@ -96,6 +86,19 @@ img{
 
 .navigation a:active{
   color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation li:nth-child(2){
+  margin-right: 91px;
+}
+
+.navigation li:nth-child(3){
+  text-align: right;
+}
+
+.navigation li:nth-child(4){
+  text-align: right;
+  margin-left: 5px;
 }
 
 .welcome-page{
@@ -129,12 +132,12 @@ img{
 }
 
 .appeal p{
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   text-align: center;
 }
 
 .appeal p:nth-child(2){
-  margin-bottom: 50px;
+  margin-bottom: 49px;
     
   font-size: 14px;
   font-weight: 400;
@@ -162,9 +165,14 @@ img{
 
 .feature-text h2{
   margin-top: 46px;
-  margin-left: 121px;
-  margin-right: 122px;
+  padding-left: 121px;
+  padding-right: 122px;
+    
   color: #ffffff;
+}
+
+.devil-bridge{
+  margin-top: 45px;
 }
 
 .feature-text .number{
@@ -173,17 +181,13 @@ img{
 }
 
 .feature-text p{
-  margin-top: 23px;
-  margin-left: 45px;
-  margin-right: 45px;
+  padding-left: 37px;
+  padding-right: 39px;
+  margin-top: 21px;
 }
 
 .feature-photo img{
   display: block;
-}
-
-.feature-item-list{
-  border: 1px solid transparent;
 }
 
 .offer-list{
@@ -205,35 +209,37 @@ img{
 }
 
 .offer-item h2{
-  margin-top: 162px;
-  margin-bottom: 24px;
+  margin-top: 161px;
+  margin-bottom: 10px;
 }
 
 .offer-item p{
-  margin-bottom: 83px;
-  margin-left: 54px;
-  margin-right: 55px;
+  display: inline-block;
+  margin-bottom: 82px;
+  padding-left: 46px;
+  padding-right: 50px;
 }
 
 .offer-item-living{
   background-image: url("../img/offer-item-housing.svg");
   background-repeat: no-repeat;
-  background-position: center 61px;
+  background-position: center 60px;
 }
 
 .offer-item-food{
   background-image: url("../img/offer-item-food.svg");
   background-repeat: no-repeat;
-  background-position: center 61px;
+  background-position: 158px 60px;
 }
 
 .offer-item-souvenir{
   background-image: url("../img/offer-item-souvenir.svg");
   background-repeat: no-repeat;
-  background-position: center 57px;
+  background-position: center 56px;
 }
 
 .feature-item-list{
+  border: 1px solid transparent;
   background-color: #eeeeee;
 }
 
@@ -250,20 +256,24 @@ img{
 
 .feature-item{
   width: 400px;
+  margin-bottom: 59px;
 }
 
 .feature-item h2{
-  margin-top: 49px;
+  margin-top: 45px;
   margin-bottom: 24px;
-  margin-left: 128px;
-  margin-right: 130px;
+  padding-left: 127px;
+  padding-right: 130px;
+  word-wrap: break-word;
 }
 
 .feature-item p{
-  margin-top: 24px;
-  margin-bottom: 60px;
-  margin-left: 62px;
-  margin-right: 65px;
+  margin: 0;
+  padding: 0;
+  margin-top: 21px;
+  padding-left: 61px;
+  padding-right: 65px;
+  word-wrap: break-word;
 }
 
 .search-form{
@@ -287,24 +297,25 @@ img{
 }
 
 .appeal-text p{
-  margin-top: 25px;
-  margin-bottom: 48px;
+  margin-top: 24px;
+  margin-bottom: 47px;
 }
 
 .search-button{
-  margin-left: 315px;
-  margin-right: 315px;
+  display: inline-block;
+  margin-left: 316px;
+  margin-right: 316px;
   padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding-bottom: 33px;
+  padding-left: 139px;
+  padding-right: 139px;
 
   color: #ffffff;
   font: inherit;
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
-
+  text-decoration: none;
   border: none;
   background-color: #766357;
   cursor: pointer;
@@ -403,7 +414,8 @@ img{
 .modal-form{
   position: absolute;
   left: 50%;
-  width: 569px;
+  top: 291px;
+  width: 568px;
   margin-left: -284.5px;
   z-index: 10;
 
@@ -435,9 +447,9 @@ img{
 .modal-form input{
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 345px;
+  width: 346px;
   height: 38px;
-  padding: 5px 45px 6px 10px;
+  padding: 6px 45px 7px 12px;
     
   font-size: 14px;
   font-weight: 700;
@@ -468,6 +480,7 @@ img{
 
 .modal-form .field-number{
   width: 113px;
+  height: 38px;
   padding-right: 37px;
   padding-left: 37px;
     
@@ -480,27 +493,27 @@ img{
   position: relative;
   display: inline-block;
   width: 108px;
-  margin-left: 57px;
+  margin-left: 56px;
 }
 
 .modal-form label:nth-of-type(4){
-  width: 64px;
-  margin-left: 48px;
+  width: 61px;
+  margin-left: 51px;
 }
 
 .modal-form input:nth-of-type(1){
   margin-top: 55px;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .modal-form input:nth-of-type(4){
   margin-top: 30px;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 .minus{
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: 125px;
   display: inline-block;
   width: 13px;
@@ -514,7 +527,7 @@ img{
 .plus{
   position: absolute;
   top: 9px;
-  left: 202px;
+  left: 200px;
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -545,16 +558,16 @@ img{
 }
 
 .children-minus{
-  left: 80px;
+  left: 78.5px;
 }
 
 .children-plus{
-  left: 155px;
+  left: 154px;
 }
 
 .modal-button{
-  padding: 16px 196px;
-  margin-left: 56px;
+  padding: 15px 196px 17px;
+  margin-left: 55px;
   margin-bottom: 55px;
     
   color: #ffffff;
@@ -585,7 +598,7 @@ img{
   display: inline-block;
   width: 23px;
   height: 23px;
-  left: 428px;
+  left: 427px;
   top: 15%;
 
   background-image: url("../img/calendar.svg");
@@ -621,8 +634,9 @@ img{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 37px;
     
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -632,7 +646,6 @@ img{
 }
 
 .hashtag{
-  padding-top: 12px;
   margin-left: 132px;
 }
 
@@ -649,15 +662,15 @@ img{
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 257px;
+  margin-left: 256px;
 
   text-align: center;
   list-style: none;
 }
 
 .social-button{
-  width: 45px;
-  height: 50px;
+  width: 46px;
+  height: 48px;
 
   background-color: #81b3d2;
   cursor: pointer;
@@ -670,14 +683,14 @@ img{
 }
 
 .social-button-facebook{
-  margin-left: 7px;
+  margin-left: 6px;
   background-image: url("../img/fb-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social-button-youtube{
-  margin-left: 7px;
+  margin-left: 6px;
   background-image: url("../img/youtube-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -712,7 +725,8 @@ img{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 227px;
+  align-items: center;
+  margin-left: 228px;
 
   -webkit-box-align: center;
 
@@ -730,7 +744,7 @@ img{
 
 .copyright{
   display: inline-block;
-
+  vertical-align: middle;
   color: #000000;
   font-size: 14px;
 }
@@ -756,7 +770,10 @@ img{
 }
 
 .main-navigation-current{
-  color: #766357;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 56px;
 }
 
 .filter-form{
@@ -805,34 +822,56 @@ img{
 }
 
 .filter-infrastructure-option{
-  position: relative;
-  margin-bottom: 21px;
+  margin-bottom: 25px;
 }
 
 .filter-infrastructure-option input[type="checkbox"]{
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .filter-infrastructure-option label{
-  display: inline-block;
-  height: 25px;
-  padding-left: 40px;
+  position: relative;
+  padding-left: 42px;
   
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-    
-  cursor: pointer;
-    
+  cursor: pointer;   
 }
 
-.filter-infrastructure-option input[type="checkbox"]:checked + label{
+.filter-infrasructure label{
+  padding-left: 40px;  
+}
+
+.filter-infrastructure-option label::before{
+  position: absolute;
+  left: 1px;
+  content: "";
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;  
+}
+
+.filter-infrastructure-option input[type="checkbox"]:checked + label::before{
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
-.filter-infrastructure-option input[disabled] + label{
+.filter-infrastructure-option input[disabled] + label::before{
   background-image: url("../img/checkbox-off-disabled.svg");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  cursor: default;
+}
+
+.filter-infrastructure-option input[disabled] + label{
+  cursor: default;  
 }
 
 .filter-title{
@@ -1097,7 +1136,8 @@ img{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 522px;
+  width: 760px;
+  padding-right: 20px;
 }
 
 .housing span:first-child{
@@ -1214,12 +1254,14 @@ img{
 }
 
 .rating-output{
+  box-sizing: border-box;
+  width: 110px;
   margin: 0;
   padding-top: 3px;
   padding-bottom: 3px;
+  padding-left: 5px;
     
   color: #666666;
-  
   background-color: #f2f2f2;
 }
 

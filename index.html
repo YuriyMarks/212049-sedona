@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
       <main>
         <h1 class="visually-hidden">Страница приветсвия города Седона</h1>
         <div class="welcome-page">
-          <img src="img/background-main_test.jpg" width="1200" height="508" alt="Седона">
+          <img src="img/main-background.jpg" width="1200" height="508" alt="Седона">
         </div>
 
         <div class="appeal">
@@ -41,7 +41,7 @@
           <div class="feature-text">
             <h2 class="title">Настоящий городок</h2>
             <span class="number">— №1 —</span>
-            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            <p>Седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
           </div>
           <div class="feature-photo">
             <img src="img/district-photo.jpg" width="800" height="256" alt="Фото квартала">
@@ -72,7 +72,7 @@
             <img src="img/mountain.jpg" width="800" height="256" alt="Фото Каньона">
           </div>
           <div class="feature-text">
-            <h2 class="title">Там есть<br> мост дьявола</h2>
+            <h2 class="title devil-bridge">Там есть<br> мост дьявола</h2>
             <span class="number">— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
@@ -107,17 +107,17 @@
               Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
           </div>
-          <button class="search-button" type="button">
+          <a class="search-button" href="modal-form.html">
             Поиск гостиницы в седоне
-          </button>
+          </a>
           <form class="modal-form modal-form-show" action="http://echo.htmlacademy.ru" method="post">
-            <label for="arrivel"><span class="arrivel-time"></span>Дата заезда:</label>
+            <label for="arrivel"><span class="arrivel-time"><i class="visually-hidden">Календарь для выбора даты заезда</i></span>Дата заезда:</label>
             <input type="text" name="arrivel-time" id="arrivel" placeholder="24 Апреля 2017">
-            <label for="departure"><span class="departure-time"></span>Дата выезда:</label>
+            <label for="departure"><span class="departure-time"><i class="visually-hidden">Календарь для выбора даты выезда</i></span>Дата выезда:</label>
             <input type="text" name="departure-time" id="departure" placeholder="4 Июля 2017">
-            <label for="adults"><span class="minus"></span><span class="plus"></span>Взрослые:</label>
+            <label for="adults"><span class="minus"><i class="visually-hidden">Кнопка уменьшения количества взрослых</i></span><span class="plus"><i class="visually-hidden">Кнопка увеличения количества взрослых</i></span>Взрослые:</label>
             <input class="field-number" type="text" name="adults" id="adults" placeholder="2">
-            <label for="children"><span class="minus children-minus"></span><span class="plus children-plus"></span>Дети:</label>
+            <label for="children"><span class="minus children-minus"><i class="visually-hidden">Кнопка уменьшения количества детей</i></span><span class="plus children-plus"><i class="visually-hidden">Кнопка увеличения количества детей</i></span>Дети:</label>
             <input class="field-number" type="text" name="children" id="children" placeholder="0">
             <button class="modal-button" type="submit">Найти</button>
           </form>
@@ -154,7 +154,7 @@
             </ul>
             <div class="footer-copyright">
               <span class="copyright">website by</span>
-              <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+              <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><i class="visually-hidden">Логотип академии</i></a>
             </div>
           </div>
         </section>
