@@ -864,6 +864,10 @@ img{
   background-repeat: no-repeat;
 }
 
+.filter-infrastructure-option input[type="checkbox"]:focus + label::before {
+       outline: rgb(59, 153, 252) auto 5px;
+      }
+
 .filter-infrastructure-option input[disabled] + label::before{
   background-image: url("../img/checkbox-off-disabled.svg");
   background-repeat: no-repeat;

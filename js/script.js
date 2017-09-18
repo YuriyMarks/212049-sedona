@@ -4,8 +4,6 @@ var focus = document.querySelector("[name=arrivel-time]");
 var departureDate =document.querySelector("[name=departure-time]");
 var form = document.querySelector("form");
 
-focus.focus();
-
 search.addEventListener("click", function(evt){
   if(modalForm.classList.contains("modal-form-show")){
     evt.preventDefault();
