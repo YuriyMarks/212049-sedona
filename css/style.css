@@ -1217,9 +1217,11 @@ img{
   margin-top: 14px;
   border: none;
   
-  font: inherit;  
-  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
   color: #ffffff;
     
   cursor: pointer;
